@@ -2,7 +2,7 @@ import React from 'react';
 
 import Footer from './footer/Footer';
 
-const Layout = (props) => {
+const Layout: React.FC = (props) => {
   return (
     <div>
       <div>{props.children}</div>

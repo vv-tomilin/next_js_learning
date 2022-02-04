@@ -3,7 +3,12 @@ import React from 'react';
 
 import styles from './Footer.module.scss';
 
-const navItems = [
+type TypeNavItem = {
+  icon: string;
+  link: string;
+};
+
+const navItems: TypeNavItem[] = [
   {
     link: '/',
     icon: 'home'
