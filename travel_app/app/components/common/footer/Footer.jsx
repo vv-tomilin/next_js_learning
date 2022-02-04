@@ -13,7 +13,7 @@ const navItems = [
     icon: 'explore'
   },
   {
-    link: '/place',
+    link: '/place/kyoto',
     icon: 'place'
   },
   {
