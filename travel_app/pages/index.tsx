@@ -3,6 +3,7 @@ import { GetServerSideProps, NextPage } from 'next';
 import { IPlace } from '../app/types/place';
 
 import Layout from '../app/components/common/Layout';
+import SerchSection from '../app/components/elements/Home/SearchSection/SerchSection';
 
 interface IHome {
   places: IPlace[]
@@ -11,11 +12,7 @@ interface IHome {
 const Home: NextPage<IHome> = ({ places }) => {
   return (
     <Layout>
-      {
-        places.map((place) => (
-          place.location
-        ))
-      }
+      <SerchSection />
     </Layout>
   )
 }
