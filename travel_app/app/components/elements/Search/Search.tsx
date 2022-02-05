@@ -10,14 +10,16 @@ const Search: React.FC = () => {
     setSearchTerm(e.target.value);
   }
 
-  return <div className={styles.search}>
-    <span className='material-icons-outlined'>search</span>
-    <input
-      type="text"
-      value={searchTerm}
-      placeholder='Search place...'
-      onChange={handleSearchTerm} />
-  </div>;
+  return (
+    <div className={styles.search}>
+      <span className='material-icons-outlined'>search</span>
+      <input
+        type="text"
+        value={searchTerm}
+        placeholder='Search place...'
+        onChange={handleSearchTerm} />
+    </div>
+  );
 };
 
 export default Search;

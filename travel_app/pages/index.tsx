@@ -12,7 +12,12 @@ interface IHome {
 const Home: NextPage<IHome> = ({ places }) => {
   return (
     <Layout>
-      <SerchSection />
+      <div style={{
+        width: '80%',
+        margin: '0 auto'
+      }}>
+        <SerchSection />
+      </div>
     </Layout>
   )
 }
